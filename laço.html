@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabuada</title>
+	<script>
+		function calcular() {
+			var numero = parseInt(document.getElementById("numero").value);
+			var resultado = "";
+			for (var i = 1; i <= 10; i++) {
+				resultado += numero + " x " + i + " = " + (numero * i) + "<br>";
+			}
+			document.getElementById("resultado").innerHTML = resultado;
+		}
+	</script>
+</head>
+<body>
+	<h1>Tabuada</h1>
+	<label for="numero">Digite um número:</label>
+	<input type="text" id="numero">
+	<button onclick="calcular()">Calcular</button>
+	<hr>
+	<div id="resultado"></div>
+</body>
+</html>
